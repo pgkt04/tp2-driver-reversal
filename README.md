@@ -2,6 +2,8 @@
 Windows drivers firmware findings for Thinkpad Trackpoint Keyboard II.  
 You can find the official software being looked at here: [https://support.lenovo.com/au/en/accessories/trackpoint_keyboard](https://support.lenovo.com/au/en/accessories/trackpoint_keyboard)
 
+  
+this isn't a remake/rebuild of the firmware, just some findings so I can hack together some improvements for the keyboard on macos in the future
 ## findings
 ### scrolling
 scrolling related functionality can be found within the logonset files.  
