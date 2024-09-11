@@ -1,2 +1,3 @@
 # tp2-driver-reversal
-Windows drivers firmware reversed for Thinkpad Trackpoint Keyboard II
+Windows drivers firmware reversed for Thinkpad Trackpoint Keyboard II.  
+Useful for porting features to other operating systems.
