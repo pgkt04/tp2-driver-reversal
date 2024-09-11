@@ -64,3 +64,31 @@ unsigned int hid_scroll(char input_char) {
 
     return 0;
 }
+
+// This sets something...
+void __usercall sub_402630(int a1@<esi>)
+{
+  DWORD TickCount; // esi
+  DWORD v2; // esi
+  __int64 v3; // [esp+0h] [ebp-10h] BYREF
+  char v4; // [esp+8h] [ebp-8h]
+
+  if ( dword_416BC8 )
+  {
+    v4 = 0;
+    v3 = 0x513i64; // Need to read low to high
+    // 0x13 
+    // 0x5
+    // something like buffer = {0x13, 0x5, <instruction>}
+    SetKbdFeatures(0x17EF, 0x60EE, 0xC, 1, &v3, a1);
+    TickCount = GetTickCount();
+    while ( GetTickCount() - TickCount < 0x32 )
+      ;
+    v4 = 0;
+    v3 = 1304i64;
+    OutputToDevice(0x17EF, 0x60E1, 0xFF01, 1, &v3);
+    v2 = GetTickCount();
+    while ( GetTickCount() - v2 < 0x1E )
+      ;
+  }
+}
