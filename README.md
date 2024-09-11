@@ -23,3 +23,4 @@ var_10[1] = 0x09;   // Set higher byte
 var_10[2] = input_char;  // Set input character into third byte
 SetKbdFeatures(0x17EF, 0x60EE, 0x0C, var_10); // vendor id, product ..., buffer(var_10)
 ```
+it also has other helpers working in conjunction with `HScrollFun.exe` to create the "Preferred Scrolling" feature
